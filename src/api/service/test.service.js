@@ -3,7 +3,7 @@ export default api => {
 		getTest(dto) {
             return api.instance.request({
                 method: 'post',
-				url: `test`,
+				url: `projects/search`,
 				data: dto
             })
         },

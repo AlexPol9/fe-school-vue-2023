@@ -20,6 +20,15 @@ export default {
 	methods: {
 		
 	},
+	mounted() {
+		this.$api.Test.getTest()
+			.then(({data}) => {
+				console.log(data);
+			})
+			.catch(e => {
+				console.log(e)
+			})
+	}
 }
 </script>
 
