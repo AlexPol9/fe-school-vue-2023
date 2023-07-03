@@ -5,6 +5,7 @@ export const mutation = {
 }
 
 export default {
+	namespaced: true,
 	state: {
 		counter: 1
 	},
@@ -25,21 +26,18 @@ export default {
 				dispatch('setCounter10', 100)
 			])
 		},
-		setCounter: ({dispatch, commit, state, getters}, payload) => {
-			// console.log(state)
-			// console.log(getters)
-			commit(mutation.SET_COUNTER, payload)
-
-			// api.Test.getTest()
-			// .then(({data}) => {
-			// 	console.log(data);
-			// })
-			// .catch(e => {
-			// 	console.log(e)
-			// })
-		},
+		// setCounter: ({dispatch, commit, state, getters}, payload) => {
+		// 	console.log(state)
+		// 	console.log(getters)
+		// 	commit(mutation.SET_COUNTER, payload)
+		// },
 		setCounter10: ({dispatch, commit, state, getters}, payload) => {
 			dispatch('setCounter', payload * 10)
+		},
+		setCounter100: ({dispatch, commit, state, getters, rootState, rootGetters }, payload) => {
+			console.log(rootState)
+			console.log(rootGetters)
+			dispatch('setCounter', payload * 100, {root:true})
 		}
 	},
 }

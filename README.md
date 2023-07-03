@@ -1,4 +1,4 @@
-# fe-school-vue-blank
+# fe-school-vue-2023
 
 # Available Scripts
 In the project directory, you can run:
