@@ -20,6 +20,8 @@
 		<button @click="onClick10">{{label}}10</button>
 		<button @click="onClick100">{{label}}100</button>
 		<input type="number" v-model="counterModel"/>
+
+		<div>x: {{x}}</div>
 	</div>
 </template>
 
@@ -36,7 +38,8 @@ export default {
 	},
 	data() {
 		return {
-			// counter: 0
+			// counter: 0,
+			x: 1
 		}
 	},
 

@@ -1,8 +1,10 @@
 <template>
 	<div class="app">
-		<TestComp label="inc1" />
+		<!-- <TestComp label="inc1" />
 		<TestComp label="inc2" />
-		<TestComp label="inc3" />
+		<TestComp label="inc3" /> -->
+
+		<TestCompMixin label="inc3" />
 	</div>
 </template>
 

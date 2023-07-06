@@ -5,6 +5,8 @@ import Api from '@/api'
 import router from '@/router'
 import store from '@/store'
 
+import '@/plugins/message'
+
 Vue.use(Api)
 
 // Register local assets & components globally
